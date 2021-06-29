@@ -1,22 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проводник</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Проводник</title>
 
-    <!-- styles -->
-    <link rel='stylesheet' href='styles/normalize.css' />
-    <link rel='stylesheet' href='styles/animate.min.css' />
-    <link rel='stylesheet' href='styles/style.css' />
-    <!-- /styles -->
+        <!-- fontello -->
+        <link rel="stylesheet" href="styles/fontello/animation.css" type="text/css" />
+        <link rel="stylesheet" href="styles/fontello/fontello.css" type="text/css" />
+        <link rel="stylesheet" href="styles/fontello/fontello-codes.css" type="text/css" />
+        <link rel="stylesheet" href="styles/fontello/fontello-embedded.css" type="text/css" />
+        <link rel="stylesheet" href="styles/fontello/fontello-ie7.css" type="text/css" />
+        <link rel="stylesheet" href="styles/fontello/fontello-ie7-codes.css" type="text/css" />
+        <!-- /fontello -->
 
-    <!-- script -->
-    <script src='js/script.js' defer></script>
-    <!-- script -->
-</head>
-<body>
-    
-</body>
+        <!-- styles -->
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/animate.min.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <!-- /styles -->
+
+        <!-- script -->
+        <script src="js/script.js" defer></script>
+        <!-- script -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="/"><h1>Проводник</h1></a>
+                </div>
+                <div class="header_content">
+                    <nav class="header__nav">
+                        <ul class="header__nav-menu">
+                            <li class="header__nav-menu-item"><a href="">услуги</a></li>
+                            <li class="header__nav-menu-item"><a href="">цены</a></li>
+                            <li class="header__nav-menu-item"><a href="">как это работает?</a></li>
+                            <li class="header__nav-menu-item"><a href="">блог</a></li>
+                            <li class="header__nav-menu-item"><a href="">о компании</a></li>
+                            <li class="header__nav-menu-item"><a href="">производителям</a></li>
+                            <li class="header__nav-menu-item"><a href="">проекты</a></li>
+                            <li class="header__nav-menu-item"><a href="">контакты</a></li>
+                        </ul>
+                    </nav>
+
+                    <aside class="header__contact">
+                        <address class="header__adress icon-location">г. Москва, ул. Улица, 20 с. 1</address>
+                        <div class="header__contact-info">
+                            <div class="header__contact-phone icon-phone">
+                                <a href="tel:+71231231288">8(123) 123-12-88</a>
+                            </div>
+                            <div class="header__contact-mail">
+                                <a href="mailto:info@provodnik.ru">info@provodnik.ru</a>
+                            </div>
+                        </div>
+
+                        <button class="header__back-call">Обратный звонок</button>
+                    </aside>
+                </div>
+                <button id="burger" class="header__burger">
+                    <span class="header__burger-line"></span>
+                </button>
+            </div>
+        </header>
+    </body>
 </html>

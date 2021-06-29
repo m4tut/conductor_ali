@@ -2,6 +2,10 @@
 
 @import '_vars';
 
+@function rem($size) {
+    @return $size / $font-size * 1rem;
+}
+
 *,
 *::after,
 *::before {
@@ -16,4 +20,32 @@ body {
     font-family: $text-font-family;
     color: $color-text;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    color: inherit;
+    font-family: inherit, sans-serif;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    width: 95%;
+    max-width: $container-width;
+    margin: 0 auto;
+}
+
+@import '_header';

@@ -1,0 +1,214 @@
+header {
+    padding: 25px 0;
+    .container {
+        display: flex;
+    }
+}
+
+.header__logo {
+    margin-right: rem(74px);
+
+    a {
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: rem(48px);
+        line-height: 1;
+        font-family: $title-font-family;
+        text-transform: uppercase;
+    }
+}
+
+.header__nav {
+    margin-bottom: 46px;
+}
+
+.header__nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.header__nav-menu-item {
+    font-family: $title-font-family;
+    text-transform: uppercase;
+    margin-right: 30px;
+    overflow-x: hidden;
+    transition: color 0.5s ease-in;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        background-image: url('../images/wave.svg');
+
+        transition: width 0.5s ease-in;
+    }
+
+    &:hover {
+        color: $color-hover;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.header__contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header__adress {
+    display: flex;
+    align-items: center;
+    font-size: rem(14px);
+    font-family: $text-font-family;
+
+    &::before {
+        font-size: rem(24px);
+        margin-right: 16px;
+    }
+}
+
+.header__contact-phone {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: $text-font-family;
+    font-weight: 700;
+    font-size: rem(24px);
+    margin-bottom: 8px;
+    transition: color 0.3s ease-in;
+
+    &::before {
+        position: absolute;
+        left: -40px;
+    }
+
+    &:hover {
+        color: $color-hover;
+    }
+}
+
+.header__contact-mail {
+    transition: color 0.3s ease-in;
+
+    &:hover {
+        color: $color-hover;
+    }
+}
+
+.header__back-call {
+    font-family: $title-font-family;
+    font-size: rem(18px);
+    color: $white;
+    background-color: $black;
+
+    padding: rem(11px) rem(20px);
+    margin-right: 13px;
+
+    border-radius: 6px;
+    position: relative;
+
+    transition: background-color 0.5s ease-in, color 0.5s ease-in;
+
+    &:hover {
+        color: $black;
+        background-color: $lightning-yellow;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: -13px;
+        z-index: -1;
+        width: 33px;
+        height: 33px;
+        border-radius: 6px;
+        transform: rotate(45deg);
+        background-color: $black;
+        transition: background-color 0.5s ease-in;
+    }
+
+    &:hover::before {
+        background-color: $lightning-yellow;
+    }
+}
+
+// бургер меню 
+.header__burger {
+    display: none;
+    width: 30px;
+    padding: 10px 0;
+    margin-left: 20px;
+    cursor: pointer;
+
+    font-size: 0;
+    border: 0;
+    background: none;
+}
+
+.header__burger-line {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 4px;
+
+    background-color: #000;
+
+    transition: background-color 0.4s linear;
+}
+
+.header__burger-line::before,
+.header__burger-line::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+
+    background-color: #000;
+
+    transition: transform 0.4s linear;
+}
+
+.header__burger-line::before {
+    top: -8px;
+}
+
+.header__burger-line::after {
+    bottom: -8px;
+}
+
+.burger-active {
+    position: fixed;
+    top: 25px;
+    right: 0;
+    z-index: 1000;
+}
+
+.burger-active .header__burger-line {
+    background: none;
+}
+
+.burger-active .header__burger-line::before {
+    transform-origin: left top;
+    transform: rotate(45deg) translateX(-3px);
+}
+
+.burger-active .header__burger-line::after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translateX(-2px);
+}
