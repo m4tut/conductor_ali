@@ -18,27 +18,29 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-}
 
-@media (max-width: 768px) {
-     html, body {
+    @media (max-width: 768px) {
         font-size: $font-size-teblet;
-     }
-}
+    }
 
-@media (max-width: 480px) {
-    html, body {
-       font-size: $font-size-mobile;
+    @media (max-width: 480px) {
+        font-size: $font-size-mobile;
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 
 button {
@@ -57,22 +59,55 @@ button {
 }
 
 .gradient {
+    overflow: hidden;
     background: linear-gradient(
-        0deg,
-        $electric-violet -1.81%,
-        $international-orange 33.5%,
-        rgba($lightning-yellow, 0.3) 84.16%,
-        $white 145.56%
-    ),
-    $lightning-yellow;
+            0deg,
+            $electric-violet -1.81%,
+            $international-orange 33.5%,
+            rgba($lightning-yellow, 0.3) 84.16%,
+            $white 145.56%
+        ),
+        $lightning-yellow;
 
     &::before {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
+        z-index: 20;
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 59.03%);
+        background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 59.03%);
+    }
+
+    .container {
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 10;
+        }
+
+        &::before {
+            width: 2000px;
+            height: 2000px;
+            top: 50%;
+            left: -20px;
+            transform: translateY(-50%);
+            border: 180px solid rgba($lightning-yellow, 0.3);
+        }
+
+        &::after {
+            width: 1300px;
+            height: 1300px;
+            top: 50%;
+            left: 331px;
+            transform: translateY(-50%);
+            border: 150px solid rgba($lightning-yellow, 0.3);
+        }
     }
 }
 
@@ -92,7 +127,7 @@ button {
         background-color: $lightning-yellow;
     }
 
-    &::before {
+    &::after {
         content: '';
         position: absolute;
         z-index: -1;
@@ -102,7 +137,7 @@ button {
         transition: background-color 0.5s ease-in;
     }
 
-    &:hover::before {
+    &:hover::after {
         background-color: $lightning-yellow;
     }
 }

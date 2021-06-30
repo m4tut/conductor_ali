@@ -1,11 +1,51 @@
 .intro {
-    margin-top: 93px;
+    position: relative;
+    z-index: 100;
+    margin-top: 140px;
     padding-bottom: 167px;
+
+    @media (max-width: 768px) {
+        margin-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 70px;
+        padding-bottom: 50px;
+    }
+}
+
+.intro__img-girl {
+    max-width: 100%;
+    position: absolute;
+    left: 130px;
+    bottom: 0;
+    z-index: -1;
+
+    @media (max-width: 768px) {
+        left: 0;
+    }
+}
+
+.intro__img-target {
+    max-width: 100%;
+    position: absolute;
+    bottom: 45px;
+    right: -154px;
+    z-index: -10;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .intro__logo {
     display: inline-block;
     position: relative;
+
+    img {
+        max-width: 100%;
+    }
 }
 
 .intro__logo-text {
@@ -17,6 +57,25 @@
     font-weight: 700;
     color: $white;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+        font-size: rem(48px);
+        top: -30px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: rem(40px);
+        top: -24px;
+    }
+}
+
+.intro__logo {
+    display: inline-block;
+    position: relative;
+
+    img {
+        max-width: 100%;
+    }
 }
 
 .intro__left-text {
@@ -29,10 +88,22 @@
     font-size: rem(24px);
     padding: rem(16px) rem(33px) rem(16px) rem(37px);
 
-    &::before {
+    &::after {
         top: 7px;
-        right: -20px;
+        right: -19px;
         width: 45px;
         height: 45px;
+
+        @media (max-width: 768px) {
+            width: 43px;
+            height: 42px;
+        }
+
+        @media (max-width: 480px) {
+            top: 6px;
+            right: -16px;
+            width: 37px;
+            height: 36px;
+        }
     }
 }
