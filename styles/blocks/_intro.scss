@@ -1,0 +1,38 @@
+.intro {
+    margin-top: 93px;
+    padding-bottom: 167px;
+}
+
+.intro__logo {
+    display: inline-block;
+    position: relative;
+}
+
+.intro__logo-text {
+    position: absolute;
+    top: -45px;
+    right: 18px;
+
+    font-size: rem(54px);
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.intro__left-text {
+    font-family: $title-font-family;
+    font-size: rem(22px);
+    margin: 26px 0 24px;
+}
+
+.black-btn--intro {
+    font-size: rem(24px);
+    padding: rem(16px) rem(33px) rem(16px) rem(37px);
+
+    &::before {
+        top: 7px;
+        right: -20px;
+        width: 45px;
+        height: 45px;
+    }
+}

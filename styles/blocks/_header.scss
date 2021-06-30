@@ -1,5 +1,5 @@
 header {
-    padding: 25px 0;
+    margin: 25px 0;
     .container {
         display: flex;
         position: relative;
@@ -22,7 +22,7 @@ header {
 }
 
 @media (max-width: 768px) {
-    .header_content {
+    .header__content {
         display: none;
         width: 100%;
         padding: 20px 70px 20px 20px;
@@ -35,12 +35,12 @@ header {
 }
 
 @media (max-width: 480px) {
-    .header_content {
+    .header__content {
         flex-wrap: wrap;
     }
 }
 
-.header_content-active {
+.header__content-active {
     display: flex;
 }
 
@@ -136,10 +136,15 @@ header {
     font-size: rem(14px);
     font-family: $text-font-family;
     margin-bottom: 10px;
+    transition: color 0.3s ease-in;
 
     &::before {
         font-size: rem(24px);
         margin-right: 16px;
+    }
+
+    &:hover {
+        color: $color-hover;
     }
 }
 
@@ -176,47 +181,22 @@ header {
     }
 }
 
-.header__back-call {
-    font-family: $title-font-family;
+.black-btn--header {
     font-size: rem(18px);
-    color: $white;
-    background-color: $black;
-
     padding: rem(11px) rem(20px);
     margin-right: 13px;
     margin-left: 10px;
 
-    border-radius: 6px;
-    position: relative;
-
-    transition: background-color 0.5s ease-in, color 0.5s ease-in;
-
-    &:hover {
-        color: $black;
-        background-color: $lightning-yellow;
-    }
-
     &::before {
-        content: '';
-        position: absolute;
         top: 5px;
         right: -13px;
-        z-index: -1;
         width: 33px;
         height: 33px;
-        border-radius: 6px;
-        transform: rotate(45deg);
-        background-color: $black;
-        transition: background-color 0.5s ease-in;
-    }
-
-    &:hover::before {
-        background-color: $lightning-yellow;
     }
 }
 
 @media (max-width: 768px) {
-    .header__back-call::before {
+    .black-btn--header::before {
         top: 4px;
         right: -12px;
         width: 31px;
@@ -225,7 +205,7 @@ header {
 }
 
 @media (max-width: 480px) {
-    .header__back-call::before {
+    .black-btn--header::before {
         top: 4px;
         right: -10px;
         width: 26px;

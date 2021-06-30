@@ -1,0 +1,108 @@
+@function rem($size) {
+    @return $size / $font-size * 1rem;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: $font-size;
+    font-family: $text-font-family;
+    color: $color-text;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+     html, body {
+        font-size: $font-size-teblet;
+     }
+}
+
+@media (max-width: 480px) {
+    html, body {
+       font-size: $font-size-mobile;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    color: inherit;
+    font-family: inherit, sans-serif;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    width: 95%;
+    max-width: $container-width;
+    margin: 0 auto;
+}
+
+.gradient {
+    background: linear-gradient(
+        0deg,
+        $electric-violet -1.81%,
+        $international-orange 33.5%,
+        rgba($lightning-yellow, 0.3) 84.16%,
+        $white 145.56%
+    ),
+    $lightning-yellow;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 59.03%);
+    }
+}
+
+.black-btn {
+    font-family: $title-font-family;
+    color: $white;
+    background-color: $black;
+
+    border-radius: 6px;
+    position: relative;
+    z-index: 10;
+
+    transition: background-color 0.5s ease-in, color 0.5s ease-in;
+
+    &:hover {
+        color: $black;
+        background-color: $lightning-yellow;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        border-radius: 6px;
+        transform: rotate(45deg);
+        background-color: $black;
+        transition: background-color 0.5s ease-in;
+    }
+
+    &:hover::before {
+        background-color: $lightning-yellow;
+    }
+}

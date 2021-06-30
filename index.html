@@ -26,44 +26,63 @@
         <!-- script -->
     </head>
     <body>
-        <header class="header">
-            <div class="container">
-                <div class="header__logo">
-                    <a href="/"><h1>Проводник</h1></a>
-                </div>
-                <div class="header_content">
-                    <nav class="header__nav">
-                        <ul class="header__nav-menu">
-                            <li class="header__nav-menu-item"><a href="">услуги</a></li>
-                            <li class="header__nav-menu-item"><a href="">цены</a></li>
-                            <li class="header__nav-menu-item"><a href="">как это работает?</a></li>
-                            <li class="header__nav-menu-item"><a href="">блог</a></li>
-                            <li class="header__nav-menu-item"><a href="">о компании</a></li>
-                            <li class="header__nav-menu-item"><a href="">производителям</a></li>
-                            <li class="header__nav-menu-item"><a href="">проекты</a></li>
-                            <li class="header__nav-menu-item"><a href="">контакты</a></li>
-                        </ul>
-                    </nav>
+        <div class="gradient">
+            <header class="header">
+                <div class="container">
+                    <div class="header__logo">
+                        <a href="/"><h1>Проводник</h1></a>
+                    </div>
+                    <div class="header__content">
+                        <nav class="header__nav">
+                            <ul class="header__nav-menu">
+                                <li class="header__nav-menu-item"><a href="">услуги</a></li>
+                                <li class="header__nav-menu-item"><a href="">цены</a></li>
+                                <li class="header__nav-menu-item"><a href="">как это работает?</a></li>
+                                <li class="header__nav-menu-item"><a href="">блог</a></li>
+                                <li class="header__nav-menu-item"><a href="">о компании</a></li>
+                                <li class="header__nav-menu-item"><a href="">производителям</a></li>
+                                <li class="header__nav-menu-item"><a href="">проекты</a></li>
+                                <li class="header__nav-menu-item"><a href="">контакты</a></li>
+                            </ul>
+                        </nav>
 
-                    <aside class="header__contact">
-                        <address class="header__adress icon-location">г. Москва, ул. Улица, 20 с. 1</address>
-                        <div class="header__contact-info">
-                            <div class="header__contact-phone icon-phone">
-                                <a href="tel:+71231231288">8(123) 123-12-88</a>
+                        <aside class="header__contact">
+                            <address class="header__adress icon-location">
+                                <a href="https://www.google.com/maps">г. Москва, ул. Улица, 20 с. 1</a>
+                            </address>
+                            <div class="header__contact-info">
+                                <div class="header__contact-phone icon-phone">
+                                    <a href="tel:+71231231288">8(123) 123-12-88</a>
+                                </div>
+                                <div class="header__contact-mail">
+                                    <a href="mailto:info@provodnik.ru">info@provodnik.ru</a>
+                                </div>
                             </div>
-                            <div class="header__contact-mail">
-                                <a href="mailto:info@provodnik.ru">info@provodnik.ru</a>
-                            </div>
+
+                            <button class="black-btn black-btn--header">Обратный звонок</button>
+                        </aside>
+                    </div>
+                    <button id="burger" class="header__burger">
+                        <span class="icon"></span>
+                        <span class="header__burger-text">MENU</span>
+                    </button>
+                </div>
+            </header>
+
+            <div class="intro">
+                <div class="container">
+                    <div class="intro__left">
+                        <div class="intro__logo">
+                            <span class="intro__logo-text">зайди на</span>
+                            <img src="images/intro-img/aliexpress_logo.svg" alt="intro-logo" />
                         </div>
-
-                        <button class="header__back-call">Обратный звонок</button>
-                    </aside>
+                        <p class="intro__left-text">
+                            Лучшее решение для небольших <br> интернет-магазинов и производителей
+                        </p>
+                        <button class="black-btn black-btn--intro">Обратный звонок</button>
+                    </div>
                 </div>
-                <button id="burger" class="header__burger">
-                    <span class="icon"></span>
-                    <span class="header__burger-text">MENU</span>
-                </button>
             </div>
-        </header>
+        </div>
     </body>
 </html>
