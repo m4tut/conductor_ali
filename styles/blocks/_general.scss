@@ -60,6 +60,7 @@ button {
 
 .gradient {
     overflow: hidden;
+    position: relative;
     background: linear-gradient(
             0deg,
             $electric-violet -1.81%,
@@ -76,7 +77,7 @@ button {
         z-index: 20;
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 59.03%);
+        background: linear-gradient(180deg, $white 0%, rgba($black, 0) 59.03%);
     }
 
     .container {
@@ -140,4 +141,14 @@ button {
     &:hover::after {
         background-color: $lightning-yellow;
     }
+}
+
+.leaky-sides {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: $white;
+    padding: 10px 27px;
+    background-color: $electric-violet;
+    border-radius: 4px;
 }

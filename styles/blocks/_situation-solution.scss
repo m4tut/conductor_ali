@@ -1,0 +1,136 @@
+.situation-solution {
+    position: relative;
+    margin-top: 102px;
+    margin-bottom: 97px;
+    .container {
+        display: flex;
+        column-gap: 120px;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-top: rem(55px);
+        margin-bottom: rem(60px);
+    }
+}
+
+.situation-solution__left {
+    padding-left: 88px;
+    border-right: 1px solid $black;
+    position: relative;
+
+    img {
+        max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 0;
+        width: 100%;
+        border-right: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.situation-solution__left-text {
+    margin-top: 54px;
+    margin-bottom: 97px;
+    padding: 0 80px 0 10px;
+
+    font-size: rem(18px);
+    line-height: rem(28px);
+
+    @media (max-width: 768px) {
+        margin: rem(30px) 0;
+        padding: 0;
+    }
+}
+
+.leaky-sides--situation {
+    position: absolute;
+    top: 20px;
+    left: -5px;
+}
+
+.situation-solution__right {
+    max-width: 482px;
+    padding-top: 20px;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding-top: 0;
+    }
+}
+
+.situation-solution__right-text {
+    font-weight: 600;
+    text-align: center;
+
+    margin-top: rem(27px);
+    margin-bottom: rem(40px);
+}
+
+.situation-solution__list-item {
+    display: flex;
+    align-items: center;
+    column-gap: rem(68px);
+    margin-bottom: rem(80px);
+    padding-left: 23px;
+    padding-right: 12px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.situation-solution__list-circle {
+    flex-shrink: 0;
+    box-sizing: content-box;
+    position: relative;
+    width: rem(42px);
+    height: rem(42px);
+    border-radius: 50%;
+    background-color: $gray;
+    border: rem(16px) solid $white;
+
+    box-shadow: 0 0 0px rem(24px) $gray;
+
+    &::before {
+        content: '№';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: rem(33px);
+        height: rem(33px);
+        background-color: $black;
+        border-radius: 50%;
+
+        font-size: rem(18px);
+        font-weight: 700;
+        color: $white;
+
+        position: absolute;
+        top: -20px;
+        left: -40px;
+    }
+
+    span {
+        position: absolute;
+        top: -70px;
+        right: -47px;
+
+        font-family: $title-font-family;
+        font-size: rem(144px);
+    }
+}
+
+.situation-solution__list-text {
+    font-size: rem(14px);
+    line-height: rem(20px);
+}
