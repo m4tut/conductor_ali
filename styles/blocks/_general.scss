@@ -112,7 +112,7 @@ button {
     }
 }
 
-.black-btn {
+.btn {
     font-family: $title-font-family;
     color: $white;
     background-color: $black;
@@ -151,4 +151,15 @@ button {
     padding: 10px 27px;
     background-color: $electric-violet;
     border-radius: 4px;
+}
+
+.section-title {
+    font-size: rem(32px);
+    line-height: rem(42px);
+    font-weight: bold;
+    color: $white;
+}
+
+.section-title--black {
+    color: $color-text;
 }

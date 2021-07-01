@@ -64,6 +64,7 @@ header {
 
 .header__nav-menu-item {
     font-family: $title-font-family;
+    font-weight: 700;
     text-transform: uppercase;
     margin-right: 30px;
     margin-bottom: 5px;
@@ -165,7 +166,7 @@ header {
     }
 }
 
-.black-btn--header {
+.btn--header {
     font-size: rem(18px);
     padding: rem(11px) rem(20px);
     margin-right: 17px;
@@ -182,7 +183,7 @@ header {
             width: 31px;
             height: 31px;
         }
-    
+
         @media (max-width: 480px) {
             top: 4px;
             right: -10px;
@@ -227,6 +228,7 @@ header {
     .header__burger-text {
         display: block;
         font-family: $title-font-family;
+        font-weight: 700;
         position: absolute;
         bottom: 0;
         letter-spacing: 3px;
