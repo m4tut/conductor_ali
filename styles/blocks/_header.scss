@@ -172,12 +172,10 @@ header {
     margin-right: 17px;
 
     svg {
-        
-
-        right: -8px;
+        left: 98%;
 
         @media (max-width: 768px) {
-            right: -7px;
+             left: 97%;
         }
     }
 }

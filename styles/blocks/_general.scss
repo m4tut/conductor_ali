@@ -133,14 +133,10 @@ button {
 
         position: absolute;
         top: 0;
-        right: -14px;
+        left: 98%;
 
         path {
             transition: background-color 0.5s ease-in, fill 0.5s ease-in;
-        }
-
-        @media (max-width: 768px) {
-            right: -13px;
         }
     }
 

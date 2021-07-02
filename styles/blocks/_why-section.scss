@@ -144,6 +144,12 @@
 
         border: rem(5px) solid $white;
         box-shadow: 0 0 0 rem(7px) $yellow;
+
+        transition: background-color 0.4s ease-in;
+    }
+
+    &:hover::before {
+        background-color: $yellow;
     }
 }
 
