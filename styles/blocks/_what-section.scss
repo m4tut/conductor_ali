@@ -80,3 +80,13 @@
     bottom: -3px;
     z-index: -1;
 }
+
+.btn--what-section{
+    background-color: $international-orange;
+
+    svg {
+        path {
+            fill: $international-orange;
+        }
+    }
+}

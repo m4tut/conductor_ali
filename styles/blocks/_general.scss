@@ -114,8 +114,12 @@ button {
 
 .btn {
     font-family: $title-font-family;
+    font-size: rem(24px);
+    font-weight: 700;
     color: $white;
     background-color: $black;
+
+    padding: 16px 40px 16px 33px;
 
     border-radius: 6px;
     position: relative;
@@ -123,23 +127,30 @@ button {
 
     transition: background-color 0.5s ease-in, color 0.5s ease-in;
 
+    svg {
+        height: 100%;
+        width: auto;
+
+        position: absolute;
+        top: 0;
+        right: -14px;
+
+        path {
+            transition: background-color 0.5s ease-in, fill 0.5s ease-in;
+        }
+
+        @media (max-width: 768px) {
+            right: -13px;
+        }
+    }
+
     &:hover {
         color: $black;
         background-color: $lightning-yellow;
-    }
 
-    &::after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        border-radius: 6px;
-        transform: rotate(45deg);
-        background-color: $black;
-        transition: background-color 0.5s ease-in;
-    }
-
-    &:hover::after {
-        background-color: $lightning-yellow;
+        svg path {
+            fill: $lightning-yellow;
+        }
     }
 }
 
@@ -151,6 +162,14 @@ button {
     padding: 10px 27px;
     background-color: $electric-violet;
     border-radius: 4px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background: url(../images/group.svg);
+    }
 }
 
 .section-title {

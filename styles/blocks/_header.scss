@@ -168,27 +168,16 @@ header {
 
 .btn--header {
     font-size: rem(18px);
-    padding: rem(11px) rem(20px);
+    padding: rem(10px) rem(20px);
     margin-right: 17px;
 
-    &::after {
-        top: 5px;
-        right: -13px;
-        width: 33px;
-        height: 33px;
+    svg {
+        
+
+        right: -8px;
 
         @media (max-width: 768px) {
-            top: 4px;
-            right: -12px;
-            width: 31px;
-            height: 31px;
-        }
-
-        @media (max-width: 480px) {
-            top: 4px;
-            right: -10px;
-            width: 26px;
-            height: 26px;
+            right: -7px;
         }
     }
 }

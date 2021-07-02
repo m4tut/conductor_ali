@@ -83,27 +83,3 @@
     font-size: rem(22px);
     margin: 26px 0 24px;
 }
-
-.btn--intro {
-    font-size: rem(24px);
-    padding: rem(16px) rem(33px) rem(16px) rem(37px);
-
-    &::after {
-        top: 7px;
-        right: -19px;
-        width: 45px;
-        height: 45px;
-
-        @media (max-width: 768px) {
-            width: 43px;
-            height: 42px;
-        }
-
-        @media (max-width: 480px) {
-            top: 6px;
-            right: -16px;
-            width: 37px;
-            height: 36px;
-        }
-    }
-}
