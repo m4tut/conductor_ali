@@ -1,0 +1,16 @@
+.how-section {
+    background-color: $light-gray;
+    margin-top: 100px;
+    padding-top: 70px;
+}
+
+.how-section__img-block {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 70px;
+
+    img {
+        max-width: 100%;
+    }
+}

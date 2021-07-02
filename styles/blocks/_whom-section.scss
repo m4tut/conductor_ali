@@ -1,7 +1,9 @@
-.whom-section {
+.whom-section .whom-section__container {
+    max-width: 1217px;
+    margin: 0 auto;
     background-color: $violet;
     padding-top: rem(47px);
-    padding-bottom: rem(36px);
+    padding-bottom: rem(66px);
 }
 
 .whom-section__content {
