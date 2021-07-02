@@ -156,20 +156,12 @@ button {
 
 .leaky-sides {
     display: inline-block;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 700;
     color: $white;
-    padding: 10px 27px;
+    padding: rem(10px) rem(27px);
     background-color: $electric-violet;
     border-radius: 4px;
-
-    &::before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 5px;
-        background: url(../images/group.svg);
-    }
 }
 
 .section-title {

@@ -78,12 +78,17 @@
     display: flex;
     align-items: center;
     column-gap: rem(68px);
-    margin-bottom: rem(80px);
+    margin-bottom: 80px;
     padding-left: 23px;
     padding-right: 12px;
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: rem(60px);
+        padding-right: 0;
     }
 }
 
@@ -117,6 +122,8 @@
         position: absolute;
         top: -20px;
         left: -40px;
+
+        transition: color 0.4s ease-in;
     }
 
     span {
@@ -125,8 +132,16 @@
         right: -47px;
 
         font-family: $title-font-family;
-        font-weight: 700;
         font-size: rem(144px);
+        font-weight: 700;
+
+        transition: color 0.4s ease-in;
+    }
+
+    &:hover {
+        &::before, span {
+            color: $lightning-yellow;
+        }
     }
 }
 

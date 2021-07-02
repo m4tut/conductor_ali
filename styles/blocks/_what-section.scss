@@ -42,7 +42,7 @@
     width: 50%;
     max-width: 374px;
     min-height: 120px;
-    padding: 30px;
+    padding: rem(30px);
 
     background-color: $white;
 
@@ -77,7 +77,7 @@
 .what-section__img-block {
     position: absolute;
     right: -217px;
-    bottom: -3px;
+    bottom: -4px;
     z-index: -1;
 }
 

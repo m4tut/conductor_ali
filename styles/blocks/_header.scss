@@ -104,7 +104,7 @@ header {
     justify-content: flex-end;
     align-items: flex-start;
     column-gap: 70px;
-    row-gap: 10px;
+    row-gap: 15px;
 
     @media (max-width: 768px) {
         width: 70%;
@@ -126,7 +126,7 @@ header {
 
     &::before {
         font-size: rem(24px);
-        margin-right: 16px;
+        margin-right: 20px;
     }
 
     &:hover {
