@@ -132,22 +132,6 @@
     align-items: center;
     column-gap: rem(24px);
 
-    &::before {
-        flex-shrink: 0;
-        box-sizing: content-box;
-        content: '';
-        display: block;
-        width: rem(12px);
-        height: rem(12px);
-        border-radius: 50%;
-        background-color: $electric-violet;
-
-        border: rem(5px) solid $white;
-        box-shadow: 0 0 0 rem(7px) $yellow;
-
-        transition: background-color 0.4s ease-in;
-    }
-
     &:hover::before {
         background-color: $yellow;
     }
