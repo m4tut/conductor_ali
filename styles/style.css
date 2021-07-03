@@ -1555,6 +1555,12 @@ header {
   max-width: 46vw;
 }
 
+@media (max-width: 768px) {
+  .how-section__img-block img {
+    display: none;
+  }
+}
+
 .how-section__list {
   width: 100%;
   height: 89%;
@@ -1571,6 +1577,18 @@ header {
   grid-column-gap: 12%;
 }
 
+@media (max-width: 768px) {
+  .how-section__list {
+    position: static;
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .how-section__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1583,20 +1601,56 @@ header {
 }
 
 .how-section__list-item:nth-child(1) {
-  margin-right: calc(19% + 5vh);
+  margin-right: 28%;
+}
+
+@media (max-width: 768px) {
+  .how-section__list-item:nth-child(1) {
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .how-section__list-item:nth-child(2) {
-  margin-top: calc(-100px + -11vw);
+  margin-top: -50%;
+}
+
+@media (max-width: 768px) {
+  .how-section__list-item:nth-child(2) {
+    margin: 0;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
 }
 
 .how-section__list-item:nth-child(3) {
-  margin-right: calc(20% + 3vw);
+  margin-right: 28%;
+}
+
+@media (max-width: 768px) {
+  .how-section__list-item:nth-child(3) {
+    margin: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .how-section__list-item:nth-child(4) {
-  margin-top: calc(-29% - 13vw);
-  margin-left: calc(25% + 6vh);
+  margin-top: -52%;
+  margin-left: 35%;
+}
+
+@media (max-width: 768px) {
+  .how-section__list-item:nth-child(4) {
+    margin: 0;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
 }
 
 .how-section__item-left .how-section__circle {
@@ -1641,7 +1695,13 @@ header {
 
 .how-section__item-text {
   max-width: 330px;
-  font-size: calc(1vw + 6px);
+  font-size: calc(0.8vw + 6px);
   line-height: 1.25;
+}
+
+@media (max-width: 768px) {
+  .how-section__item-text {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
