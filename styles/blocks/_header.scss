@@ -106,7 +106,11 @@ header {
     column-gap: 70px;
     row-gap: 15px;
 
+    position: absolute;
+    right: 0;
+
     @media (max-width: 768px) {
+        position: static;
         width: 70%;
         flex-direction: column;
         justify-content: space-around;
@@ -169,7 +173,7 @@ header {
 .btn--header {
     font-size: rem(18px);
     padding: rem(10px) rem(20px);
-    margin-right: 17px;
+    margin-right: 10px;
 
     svg {
         left: 98%;
