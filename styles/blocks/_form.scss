@@ -169,6 +169,18 @@
     }
 }
 
+.form-section__form-select {
+    background: url(../images/form-section-img/arrow_drop_down.svg) no-repeat;
+    background-position: right 4px top 50%, 0 0;
+    appearance: none;
+}
+
+@-moz-document url-prefix() {
+    .form-section__form-select {
+        text-indent: -2px;
+    }
+}
+
 .form-section__form-foter {
     display: flex;
     justify-content: space-between;
