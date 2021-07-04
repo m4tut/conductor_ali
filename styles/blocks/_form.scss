@@ -1,0 +1,207 @@
+.form-section {
+    padding-top: 133px;
+    padding-bottom: 94px;
+    background: url(../images/form-section-img/scenery.jpg) center bottom no-repeat;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        padding-top: 90px;
+        padding-bottom: 70px;
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+}
+
+.form-section__form {
+    margin-left: 6%;
+    margin-right: 11%;
+    padding: 25px 110px 65px 133px;
+    background-color: $white;
+    box-shadow: 0px 6px 12px rgba($black, 0.14), 0px 16px 24px rgba($black, 0.08);
+
+    @media (max-width: 768px) {
+        padding-left: 20px;
+        padding-right: 24px;
+    }
+
+    @media (max-width: 480px) {
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    &:valid .form-section__form-body::before {
+        background-color: $green;
+        box-shadow: 0 0 0 72px $green;
+
+        @media (max-width: 768px) {
+            box-shadow: 0 0 0 60px $green;
+        }
+
+        @media (max-width: 480px) {
+            box-shadow: 0 0 0 40px $green;
+        }
+    }
+}
+
+.form-section__form-body {
+    overflow: hidden;
+    position: relative;
+
+    padding-top: 50px;
+    padding-left: 68px;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+
+    &::before {
+        box-sizing: content-box;
+        content: '';
+        display: block;
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        background-color: $light-gray;
+
+        border: 45px solid $white;
+        box-shadow: 0 0 0 72px $light-gray;
+
+        position: absolute;
+        top: 13px;
+        left: 17px;
+
+        transition: background-color 0.4s ease-in, box-shadow 0.4s ease-in;
+
+        @media (max-width: 768px) {
+            width: 90px;
+            height: 90px;
+            border-width: 30px;
+            box-shadow: 0 0 0 60px $light-gray;
+        }
+
+        @media (max-width: 480px) {
+            width: 50px;
+            height: 50px;
+            border-width: 25px;
+            box-shadow: 0 0 0 40px $light-gray;
+        }
+    }
+
+    .section-title,
+    .form-section__form-left,
+    .form-section__form-right {
+        position: relative;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: rem(30px);
+        padding-left: 48px;
+    }
+
+    @media (max-width: 480px) {
+        padding-left: 0;
+    }
+}
+
+.form-section__form-left,
+.form-section__form-right {
+    width: 50%;
+    max-width: 310px;
+    min-width: 290px;
+    margin-top: 45px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: rem(20px);
+    }
+
+    @media (max-width: 480px) {
+        min-width: 240px;
+    }
+}
+
+.form-section__form-group {
+    position: relative;
+    padding-top: rem(20px);
+
+    & ~ & {
+        margin-top: 24px;
+    }
+}
+
+.form-section__form-label {
+    display: block;
+    font-size: rem(12px);
+    line-height: rem(20px);
+    color: rgba($black, 0.54);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: color 0.4s ease-in;
+}
+
+.form-section__form-input {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $dark-gray;
+
+    transition: border 0.4s ease-in;
+
+    &::placeholder {
+        font-size: rem(16px);
+        line-height: rem(24px);
+        color: $black;
+        opacity: 0.9;
+    }
+
+    &:focus {
+        border-bottom: 2px solid $electric-violet;
+    }
+
+    &:focus ~ .form-section__form-label,
+    .form-section__form-label:focus {
+        color: $electric-violet;
+    }
+}
+
+.form-section__form-foter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-left: 68px;
+    margin-top: rem(24px);
+
+    @media (max-width: 768px) {
+        padding-left: 48px;
+    }
+
+    @media (max-width: 480px) {
+        padding-left: 0;
+    }
+}
+
+.form-section__form-foter-text {
+    width: 50%;
+    min-width: 290px;
+    font-size: rem(12px);
+    line-height: rem(18px);
+
+    a {
+        text-decoration: underline;
+        transition: color 0.4s ease-in;
+
+        &:hover {
+            color: $electric-violet;
+        }
+    }
+
+    @media (max-width: 480px) {
+        min-width: 240px;
+    }
+}
