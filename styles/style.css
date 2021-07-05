@@ -2572,6 +2572,11 @@ header {
   display: block;
 }
 
+.modal, .modal .form-section {
+  background-image: none;
+  padding: 0;
+}
+
 .modal__modal-dialog {
   margin-top: 5vh;
 }

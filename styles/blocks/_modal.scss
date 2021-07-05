@@ -12,6 +12,11 @@
     &--active {
         display: block;
     }
+
+    &, .form-section {
+        background-image: none;
+        padding: 0;
+    }
 }
 
 .modal__modal-dialog {
