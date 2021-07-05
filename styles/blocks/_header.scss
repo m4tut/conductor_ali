@@ -34,7 +34,7 @@ header {
     }
 }
 
-.header__content-active {
+.header__content--active {
     display: flex;
 }
 
@@ -63,36 +63,6 @@ header {
 }
 
 .header__nav-menu-item {
-    font-family: $title-font-family;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-right: 30px;
-    margin-bottom: 5px;
-    overflow-x: hidden;
-    transition: color 0.5s ease-in;
-
-    &:last-child {
-        margin-right: 0;
-    }
-
-    &::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 4px;
-        background-image: url('../images/wave.svg');
-
-        transition: width 0.5s ease-in;
-    }
-
-    &:hover {
-        color: $color-hover;
-    }
-
-    &:hover::after {
-        width: 100%;
-    }
-
     @media (max-width: 768px) {
         margin-right: 0;
     }
@@ -121,44 +91,11 @@ header {
     }
 }
 
-.header__adress {
-    display: flex;
-    align-items: center;
-    font-size: rem(14px);
-    font-family: $text-font-family;
-    transition: color 0.3s ease-in;
-
-    &::before {
-        font-size: rem(24px);
-        margin-right: 20px;
-    }
-
-    &:hover {
-        color: $color-hover;
-    }
-}
-
 .header__contact-info {
     margin-left: 45px;
-}
 
-.header__contact-phone {
-    display: flex;
-    align-items: center;
-    position: relative;
-    font-family: $text-font-family;
-    font-weight: 700;
-    font-size: rem(24px);
-    margin-bottom: 8px;
-    transition: color 0.3s ease-in;
-
-    &::before {
-        position: absolute;
-        left: -43px;
-    }
-
-    &:hover {
-        color: $color-hover;
+    @media (max-width: 768px) {
+        margin-left: 35px;
     }
 }
 
@@ -167,20 +104,6 @@ header {
 
     &:hover {
         color: $color-hover;
-    }
-}
-
-.btn--header {
-    font-size: rem(18px);
-    padding: rem(10px) rem(20px);
-    margin-right: 10px;
-
-    svg {
-        left: 98%;
-
-        @media (max-width: 768px) {
-             left: 97%;
-        }
     }
 }
 

@@ -67,10 +67,10 @@
     @media (max-width: 480px) {
         padding-left: 20px;
     }
-}
 
-.achievements-section__slider-item--active {
-    display: flex;
+    &--active {
+        display: flex;
+    }
 }
 
 .achievements-section__slider-img {

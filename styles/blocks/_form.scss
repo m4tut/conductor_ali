@@ -182,6 +182,7 @@
 }
 
 .form-section__form-foter {
+    max-width: 718px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -215,5 +216,11 @@
 
     @media (max-width: 480px) {
         min-width: 240px;
+    }
+}
+
+.form-section__footer-btn {
+    svg {
+        left: 97%;
     }
 }
