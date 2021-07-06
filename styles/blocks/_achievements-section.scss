@@ -135,7 +135,7 @@
     padding-right: rem(20px);
 
     b {
-        min-width: 180px;
+        white-space: nowrap;
         font-size: rem(48px);
 
         @media (max-width: 768px) {

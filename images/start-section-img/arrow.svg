@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 16"><path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M.5 8H51M45 1l7 7-7 7"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 16">
+  <defs>
+    <linearGradient id="linear-gradient">
+      <stop offset="0%" stop-color="#fff" />
+      <stop offset="90%" stop-color="#fdbf0f" />
+      <stop offset="100%" stop-color="#fff" />
+      <animateTransform attributeName="gradientTransform"
+        type="translate"
+        from="-1 0"
+        to="1 0"
+        begin="0s"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+<path stroke="url(#linear-gradient)" stroke-miterlimit="10" stroke-width="2" d="M.5 8H51M45 1l7 7-7 7"/>
+</svg>

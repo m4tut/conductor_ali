@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Проводник</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
         <!-- fontello -->
         <link rel="stylesheet" href="styles/fontello/animation.css" type="text/css" />
@@ -25,7 +26,7 @@
         <script src="js/script.js" defer></script>
         <!-- script -->
     </head>
-    <body>
+    <body class="animate__animated animate__fadeIn animate__delay-1s">
         <div class="gradient">
             <div class="container">
                 <header class="header">
@@ -35,14 +36,30 @@
                     <div class="header__content">
                         <nav class="header__nav">
                             <ul class="header__nav-menu">
-                                <li class="header__nav-menu-item header-footer-menu-item"><a href="">услуги</a></li>
-                                <li class="header__nav-menu-item header-footer-menu-item"><a href="">цены</a></li>
-                                <li class="header__nav-menu-item header-footer-menu-item"><a href="">как это работает?</a></li>
-                                <li class="header__nav-menu-item header-footer-menu-item"><a href="">блог</a></li>
-                                <li class="header__nav-menu-item header-footer-menu-item"><a href="">о компании</a></li>
-                                <li class="header__nav-menu-item header-footer-menu-item"><a href="">производителям</a></li>
-                                <li class="header__nav-menu-item header-footer-menu-item"><a href="">проекты</a></li>
-                                <li class="header__nav-menu-item header-footer-menu-item"><a href="">контакты</a></li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">услуги</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">цены</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">как это работает?</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">блог</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">о компании</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">производителям</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">проекты</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">контакты</a>
+                                </li>
                             </ul>
                         </nav>
 
@@ -59,7 +76,11 @@
                                 </div>
                             </div>
 
-                            <button type="button" class="btn btn--header-footer" data-modal="modal__back-call">
+                            <button
+                                type="button"
+                                class="btn btn--header-footer"
+                                data-modal="modal__back-call"
+                            >
                                 Обратный звонок
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
                                     <path
@@ -351,10 +372,10 @@
 
                                     <ul class="achievements-section__slider-list">
                                         <li class="achievements-section__list-item list-marker">
-                                            <b>765 885</b> Законченных покупок
+                                            <b data-number>765 885</b> Законченных покупок
                                         </li>
                                         <li class="achievements-section__list-item list-marker">
-                                            <b>789 654</b> Просмотров магазина
+                                            <b data-number>789 654</b> Просмотров магазина
                                         </li>
                                     </ul>
                                 </div>
@@ -385,16 +406,7 @@
                             форму.
                         </li>
 
-                        <li class="start-section__list-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 16">
-                                <path
-                                    stroke="#fff"
-                                    stroke-miterlimit="10"
-                                    stroke-width="2"
-                                    d="M.5 8H51M45 1l7 7-7 7"
-                                />
-                            </svg>
-                        </li>
+                        <li class="start-section__list-arrow"></li>
 
                         <li class="start-section__list-item">
                             <span class="start-section__list-marker">2</span>
@@ -402,16 +414,7 @@
                             с менеджером.
                         </li>
 
-                        <li class="start-section__list-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 16">
-                                <path
-                                    stroke="#fff"
-                                    stroke-miterlimit="10"
-                                    stroke-width="2"
-                                    d="M.5 8H51M45 1l7 7-7 7"
-                                />
-                            </svg>
-                        </li>
+                        <li class="start-section__list-arrow"></li>
 
                         <li class="start-section__list-item">
                             <span class="start-section__list-marker">3</span>
@@ -419,16 +422,7 @@
                             пакет услуг.
                         </li>
 
-                        <li class="start-section__list-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 16">
-                                <path
-                                    stroke="#fff"
-                                    stroke-miterlimit="10"
-                                    stroke-width="2"
-                                    d="M.5 8H51M45 1l7 7-7 7"
-                                />
-                            </svg>
-                        </li>
+                        <li class="start-section__list-arrow"></li>
 
                         <li class="start-section__list-item">
                             <span class="start-section__list-marker">4</span>
@@ -439,7 +433,7 @@
                 </div>
             </section>
 
-            <div class="form-section">
+            <section class="form-section">
                 <div class="container">
                     <form action="/" method="POST" class="form-section__form">
                         <div class="form-section__form-body">
@@ -548,7 +542,7 @@
                         </footer>
                     </form>
                 </div>
-            </div>
+            </section>
         </main>
 
         <footer class="footer">
@@ -574,7 +568,7 @@
                 <div class="footer__bottom">
                     <div class="footer__bottom-info icon-copy">
                         <p>
-                            2018. <br> 
+                            2018. <br />
                             Все права защищены.
                         </p>
                     </div>
@@ -591,8 +585,12 @@
                             </div>
                         </div>
 
-                        <a href="https://www.facebook.com/" class="footer__bottom-icon icon-facebook" target="_blank"></a>
-    
+                        <a
+                            href="https://www.facebook.com/"
+                            class="footer__bottom-icon icon-facebook"
+                            target="_blank"
+                        ></a>
+
                         <button type="button" class="btn btn--header-footer" data-modal="modal__back-call">
                             Обратный звонок
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
@@ -609,16 +607,18 @@
         <!-- modal window -->
         <div id="modal__back-call" class="form-section modal">
             <div class="container">
-                <form action="/" method="POST" class="form-section__form modal__modal-dialog animate__animated">
+                <form
+                    action="/"
+                    method="POST"
+                    class="form-section__form modal__modal-dialog animate__animated"
+                >
                     <button type="button" class="modal__close icon-modal-close" data-close></button>
                     <div class="form-section__form-body">
-                        <h2 class="section-title section-title--black">
-                            Пожалуйста, оставьте свои контакты
-                        </h2>
+                        <h2 class="section-title section-title--black">Пожалуйста, оставьте свои контакты</h2>
                         <div class="form-section__form-left">
                             <div class="form-section__form-group">
                                 <input
-                                    id="modal-name"
+                                    id="name"
                                     name="name"
                                     type="text"
                                     class="form-section__form-input"
@@ -626,12 +626,12 @@
                                     pattern="^[А-Яа-яЁё]+$"
                                     required
                                 />
-                                <label for="modal-name" class="form-section__form-label"> Имя </label>
+                                <label for="name" class="form-section__form-label"> Имя </label>
                             </div>
-    
+
                             <div class="form-section__form-group">
                                 <input
-                                    id="modal-phone"
+                                    id="phone"
                                     name="phone"
                                     type="tel"
                                     class="form-section__form-input"
@@ -639,26 +639,25 @@
                                     pattern="\+?[0-9\s\-\(\)]+"
                                     required
                                 />
-                                <label for="modal-phone" class="form-section__form-label"> Телефон </label>
+                                <label for="phone" class="form-section__form-label"> Телефон </label>
                             </div>
-    
+
                             <div class="form-section__form-group">
                                 <input
-                                    id="modal-email"
+                                    id="email"
                                     name="email"
                                     type="email"
                                     class="form-section__form-input"
                                     placeholder="Нужен для связи"
                                     required
                                 />
-                                <label for="modal-email" class="form-section__form-label"> Е-mail </label>
+                                <label for="email" class="form-section__form-label"> Е-mail </label>
                             </div>
                         </div>
-                        
                         <div class="form-section__form-right">
                             <div class="form-section__form-group">
                                 <select
-                                    id="modal-occupation"
+                                    id="occupation"
                                     class="form-section__form-input form-section__form-select"
                                     name="occupation"
                                     required
@@ -668,37 +667,35 @@
                                     <option value="Электроника">Электроника</option>
                                     <option value="Продукты питания">Продукты питания</option>
                                 </select>
-                                <label for="modal-occupation" class="form-section__form-label"> Кто вы </label>
+                                <label for="occupation" class="form-section__form-label"> Кто вы </label>
                             </div>
-    
+
                             <div class="form-section__form-group">
                                 <input
-                                    id="modal-domain"
+                                    id="domain"
                                     name="domain"
                                     type="text"
                                     class="form-section__form-input"
                                 />
-                                <label for="modal-domain" class="form-section__form-label">
+                                <label for="domain" class="form-section__form-label">
                                     Домен (если есть)
                                 </label>
                             </div>
-    
+
                             <div class="form-section__form-group">
                                 <input
-                                    id="modal-caption"
+                                    id="caption"
                                     name="caption"
                                     type="text"
                                     class="form-section__form-input"
                                     placeholder="Input caption"
                                     required
                                 />
-                                <label for="modal-caption" class="form-section__form-label">
-                                    Focused state
-                                </label>
+                                <label for="caption" class="form-section__form-label"> Focused state </label>
                             </div>
                         </div>
                     </div>
-    
+
                     <footer class="form-section__form-foter">
                         <div class="form-section__form-foter-text">
                             <p>

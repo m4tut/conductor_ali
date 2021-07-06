@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --animate-delay: 0.4s;
+}
+
 html,
 body {
     font-size: $font-size;
@@ -18,6 +22,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    cursor: default;
 
     @media (max-width: 768px) {
         font-size: $font-size-teblet;
@@ -101,8 +106,10 @@ button {
             height: 2000px;
             top: 50%;
             left: -20px;
-            transform: translateY(-50%);
+            transform: translateY(-50%) rotate(-45deg);
             border: 180px solid rgba($lightning-yellow, 0.3);
+            border-top: 180px solid rgba($lightning-yellow, 0.3);
+            border-left: 180px solid rgba($lightning-yellow, 0.3);
         }
 
         &::after {
@@ -110,8 +117,9 @@ button {
             height: 1300px;
             top: 50%;
             left: 331px;
-            transform: translateY(-50%);
-            border: 150px solid rgba($lightning-yellow, 0.3);
+            transform: translateY(-50%) rotate(-45deg);
+            border-top: 150px solid rgba($lightning-yellow, 0.3);
+            border-left: 150px solid rgba($lightning-yellow, 0.3);
         }
     }
 }
@@ -163,7 +171,7 @@ button {
         left: 97.5%;
 
         @media (max-width: 768px) {
-             left: 97%;
+            left: 97%;
         }
     }
 }
