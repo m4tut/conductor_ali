@@ -25,16 +25,20 @@
         margin-top: rem(60px);
         margin-bottom: rem(42px);
     }
+
+    @media (max-width: 480px) {
+        row-gap: rem(20px);
+    }
 }
 
-.what-section__aside-bouble {
+.what-section__aside-double {
     display: flex;
     column-gap: 22px;
 
     @media (max-width: 480px) {
         flex-wrap: wrap;
         justify-content: center;
-        row-gap: rem(47px);
+        row-gap: rem(20px);
     }
 }
 
@@ -123,7 +127,7 @@
         background: url(../images/what-section-img/aliexpress.png) no-repeat;
         background-position: 50% -100%;
         
-        animation: descent 5s linear 2s infinite, shakeX 2s ease-in-out infinite;
+        animation: descent 5s linear infinite, shakeX 2s ease-in-out infinite;
     }
 }
 
@@ -132,13 +136,12 @@
         background-position: 50% -100%;
     }
 
-    60% {
+    65% {
         opacity: 1;
     }
 
     100% {
-        background-position: 50% 200%;
-        transform: rotate(0deg);
+        background-position: 50% 150%;
         opacity: 0;
     }
 }

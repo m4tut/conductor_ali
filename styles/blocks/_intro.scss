@@ -22,6 +22,10 @@
         background: url(../images/intro-img/aliexpress.png) no-repeat center;
 
         animation: star 5s linear infinite;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     @media (max-width: 768px) {

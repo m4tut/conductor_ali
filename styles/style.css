@@ -363,7 +363,7 @@ header {
     width: 100%;
     padding: 20px 70px 20px 20px;
     position: absolute;
-    top: 0;
+    top: 25px;
     left: 0;
     background-color: wheat;
   }
@@ -484,7 +484,7 @@ header {
 .header__burger {
   display: none;
   position: absolute;
-  top: 0;
+  top: 25px;
   right: 0;
   z-index: 100;
   width: 60px;
@@ -950,6 +950,12 @@ header {
 }
 
 @media (max-width: 768px) {
+  .intro::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
   .intro {
     margin-top: 90px;
     padding-bottom: 90px;
@@ -1276,7 +1282,13 @@ header {
   }
 }
 
-.what-section__aside-bouble {
+@media (max-width: 480px) {
+  .what-section__aside-block {
+    row-gap: 1.25rem;
+  }
+}
+
+.what-section__aside-double {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1285,13 +1297,13 @@ header {
 }
 
 @media (max-width: 480px) {
-  .what-section__aside-bouble {
+  .what-section__aside-double {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    row-gap: 2.9375rem;
+    row-gap: 1.25rem;
   }
 }
 
@@ -1380,21 +1392,19 @@ header {
   bottom: 180px;
   background: url(../images/what-section-img/aliexpress.png) no-repeat;
   background-position: 50% -100%;
-  -webkit-animation: descent 5s linear 2s infinite, shakeX 2s ease-in-out infinite;
-          animation: descent 5s linear 2s infinite, shakeX 2s ease-in-out infinite;
+  -webkit-animation: descent 5s linear infinite, shakeX 2s ease-in-out infinite;
+          animation: descent 5s linear infinite, shakeX 2s ease-in-out infinite;
 }
 
 @-webkit-keyframes descent {
   0% {
     background-position: 50% -100%;
   }
-  60% {
+  65% {
     opacity: 1;
   }
   100% {
-    background-position: 50% 200%;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    background-position: 50% 150%;
     opacity: 0;
   }
 }
@@ -1403,13 +1413,11 @@ header {
   0% {
     background-position: 50% -100%;
   }
-  60% {
+  65% {
     opacity: 1;
   }
   100% {
-    background-position: 50% 200%;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    background-position: 50% 150%;
     opacity: 0;
   }
 }
@@ -1774,8 +1782,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: calc(1vw + 25px);
-          column-gap: calc(1vw + 25px);
+  -webkit-column-gap: calc(1vw + 15px);
+          column-gap: calc(1vw + 15px);
 }
 
 .how-section__list-item:nth-child(1) {
@@ -1890,7 +1898,7 @@ header {
 
 .how-section__item-text {
   max-width: 330px;
-  font-size: calc(0.6vw + 5px);
+  font-size: calc(0.45vw + 8px);
   line-height: 1.25;
 }
 

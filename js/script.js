@@ -28,11 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
             modalElem.classList.add('modal--active');
             modalElem.querySelector('.animate__animated').classList.add('animate__bounceInLeft');
             document.body.classList.add('no-scroll');
+            modalElem.querySelector('[data-close]').addEventListener('click', closeModal);
         });
     });
 
     //close modal window
     const closeModal = () => {
+        modalElem.querySelector('[data-close]').removeEventListener('click', closeModal);
         modalElem.querySelector('.animate__animated').classList.remove('animate__bounceInLeft');
         modalElem.querySelector('.animate__animated').classList.add('animate__backOutRight');
         document.removeEventListener('keydown', escapeHandler);

@@ -57,7 +57,7 @@
 .how-section__list-item {
     display: flex;
     align-items: center;
-    column-gap: calc(1vw + 25px);
+    column-gap: calc(1vw + 15px);
 
     &:nth-child(1) {
         margin-right: 28%;
@@ -139,12 +139,10 @@
 }
 
 .how-section__item-text {
-    // width: 30vw;
     max-width: 330px;
-    font-size: calc(0.6vw + 5px);
+    font-size: calc(0.45vw + 8px);
     line-height: 1.25;
 
-    
     @media (max-width: 768px) {
         font-size: rem(16px);
         max-width: 70%;

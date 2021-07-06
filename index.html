@@ -173,7 +173,7 @@
                     </h2>
 
                     <div class="what-section__aside-block">
-                        <div class="what-section__aside-bouble">
+                        <div class="what-section__aside-double">
                             <aside class="what-section__item icon-calc">
                                 <p class="what-section__item-text">
                                     Снизите операционные расходы и расходы на маркетинг.
@@ -185,7 +185,7 @@
                                 </p>
                             </aside>
                         </div>
-                        <div class="what-section__aside-bouble">
+                        <div class="what-section__aside-double">
                             <aside class="what-section__item icon-bigsales">
                                 <p class="what-section__item-text">
                                     Сможете реализовывать продукцию в очень больших объемах.
@@ -306,7 +306,7 @@
                     <div class="how-section__img-block">
                         <img src="images/how-section-img/chels-target.png" alt="target" />
 
-                        <ol class="how-section__list">
+                        <ol class="how-section__list animate__animated animate__zoomInDown animate__slow animate__delay-5s">
                             <li class="how-section__list-item how-section__item-left">
                                 <span class="how-section__circle">2</span>
                                 <p class="how-section__item-text">
@@ -373,10 +373,10 @@
 
                                     <ul class="achievements-section__slider-list">
                                         <li class="achievements-section__list-item list-marker">
-                                            <b data-number>765 885</b> Законченных покупок
+                                            <b class="animate__animated animate__pulse animate__infinite animate__slow">765 885</b> Законченных покупок
                                         </li>
                                         <li class="achievements-section__list-item list-marker">
-                                            <b data-number>789 654</b> Просмотров магазина
+                                            <b class="animate__animated animate__pulse animate__infinite animate__slow">789 654</b> Просмотров магазина
                                         </li>
                                     </ul>
                                 </div>
@@ -619,7 +619,7 @@
                         <div class="form-section__form-left">
                             <div class="form-section__form-group">
                                 <input
-                                    id="name"
+                                    id="modal-name"
                                     name="name"
                                     type="text"
                                     class="form-section__form-input"
@@ -627,12 +627,12 @@
                                     pattern="^[А-Яа-яЁё]+$"
                                     required
                                 />
-                                <label for="name" class="form-section__form-label"> Имя </label>
+                                <label for="modal-name" class="form-section__form-label"> Имя </label>
                             </div>
 
                             <div class="form-section__form-group">
                                 <input
-                                    id="phone"
+                                    id="modal-phone"
                                     name="phone"
                                     type="tel"
                                     class="form-section__form-input"
@@ -640,25 +640,25 @@
                                     pattern="\+?[0-9\s\-\(\)]+"
                                     required
                                 />
-                                <label for="phone" class="form-section__form-label"> Телефон </label>
+                                <label for="modal-phone" class="form-section__form-label"> Телефон </label>
                             </div>
 
                             <div class="form-section__form-group">
                                 <input
-                                    id="email"
+                                    id="modal-email"
                                     name="email"
                                     type="email"
                                     class="form-section__form-input"
                                     placeholder="Нужен для связи"
                                     required
                                 />
-                                <label for="email" class="form-section__form-label"> Е-mail </label>
+                                <label for="modal-email" class="form-section__form-label"> Е-mail </label>
                             </div>
                         </div>
                         <div class="form-section__form-right">
                             <div class="form-section__form-group">
                                 <select
-                                    id="occupation"
+                                    id="modal-occupation"
                                     class="form-section__form-input form-section__form-select"
                                     name="occupation"
                                     required
@@ -668,31 +668,31 @@
                                     <option value="Электроника">Электроника</option>
                                     <option value="Продукты питания">Продукты питания</option>
                                 </select>
-                                <label for="occupation" class="form-section__form-label"> Кто вы </label>
+                                <label for="modal-occupation" class="form-section__form-label"> Кто вы </label>
                             </div>
 
                             <div class="form-section__form-group">
                                 <input
-                                    id="domain"
+                                    id="modal-domain"
                                     name="domain"
                                     type="text"
                                     class="form-section__form-input"
                                 />
-                                <label for="domain" class="form-section__form-label">
+                                <label for="modal-domain" class="form-section__form-label">
                                     Домен (если есть)
                                 </label>
                             </div>
 
                             <div class="form-section__form-group">
                                 <input
-                                    id="caption"
+                                    id="modal-caption"
                                     name="caption"
                                     type="text"
                                     class="form-section__form-input"
                                     placeholder="Input caption"
                                     required
                                 />
-                                <label for="caption" class="form-section__form-label"> Focused state </label>
+                                <label for="modal-caption" class="form-section__form-label"> Focused state </label>
                             </div>
                         </div>
                     </div>
