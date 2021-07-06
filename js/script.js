@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             modalElem = document.getElementById(elem.dataset.modal);
             modalElem.classList.add('modal--active');
             modalElem.querySelector('.animate__animated').classList.add('animate__bounceInLeft');
-            document.body.classList.add('no-scroll')
+            document.body.classList.add('no-scroll');
         });
     });
 
@@ -44,13 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
     };
 
-    const escapeHandler = (event) => {
+    const escapeHandler = event => {
         if (event.code == 'Escape') {
             closeModal();
         }
     };
-
-    document.querySelector('[data-close]').addEventListener('click', () => {
-        closeModal();
-    });
 });

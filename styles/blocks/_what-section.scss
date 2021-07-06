@@ -6,25 +6,10 @@
     .container {
         position: relative;
         z-index: 100;
-
-        &::after {
-            content: '';
-            display: block;
-            width: 781px;
-            height: 664px;
-
-            position: absolute;
-            right: -210px;
-            bottom: -4px;
-            z-index: -1;
-
-            background: url(../images/what-section-img/hand.png);
-        }
     }
 
     @media (max-width: 768px) {
         padding-top: rem(50px);
-        padding-left: 0;
     }
 }
 
@@ -68,6 +53,8 @@
     column-gap: 20px;
     align-items: center;
 
+    box-shadow: 0px 6px 12px rgba($black, 0.14), 0px 16px 24px rgba($black, 0.08);
+
     &::before {
         margin: 0;
         padding: 0;
@@ -87,11 +74,71 @@
 
 .btn--what-section {
     margin-bottom: rem(80px);
+}
+
+.btn--what-section {
     background-color: $international-orange;
 
     svg {
         path {
             fill: $international-orange;
         }
+    }
+}
+
+.what-section__circle {
+    box-sizing: content-box;
+    position: absolute;
+    bottom: 40px;
+    right: -60px;
+    z-index: -1;
+
+    width: 268px;
+    height: 268px;
+    background-color: $blush;
+    border-radius: 50%;
+    border: 105px solid $electric-violet;
+    box-shadow: 0 0 0 152px $blush;
+}
+
+.what-section__circle-img {
+    position: absolute;
+    bottom: -145px;
+    right: -95px;
+
+    width: 588px;
+    height: 602px;
+    background-image: url(../images/what-section-img/hend.png);
+
+    &::after {
+        content: '';
+        display: block;
+        width: 210px;
+        height: 360px;
+
+        position: absolute;
+        right: 95px;
+        bottom: 180px;
+
+        background: url(../images/what-section-img/aliexpress.png) no-repeat;
+        background-position: 50% -100%;
+        
+        animation: descent 5s linear 2s infinite, shakeX 2s ease-in-out infinite;
+    }
+}
+
+@keyframes descent {
+    0% {
+        background-position: 50% -100%;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        background-position: 50% 200%;
+        transform: rotate(0deg);
+        opacity: 0;
     }
 }
