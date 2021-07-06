@@ -4,6 +4,26 @@
     margin-top: 185px;
     padding-bottom: 167px;
 
+    &::after {
+        content: '';
+        box-sizing: content-box;
+        display: block;
+        width: 375px;
+        height: 375px;
+
+        border-radius: 50%;
+        border: 120px solid $lightning-yellow;
+
+        position: absolute;
+        bottom: 45px;
+        right: -154px;
+        z-index: -10;
+
+        background: url(../images/intro-img/aliexpress.png) no-repeat center;
+
+        animation: star 5s linear infinite;
+    }
+
     @media (max-width: 768px) {
         margin-top: 90px;
         padding-bottom: 90px;
@@ -12,6 +32,24 @@
     @media (max-width: 480px) {
         margin-top: 70px;
         padding-bottom: 50px;
+    }
+}
+
+@keyframes star {
+    0% {
+        background-position: top;
+    }
+    25% {
+        background-position: right;
+    }
+    50% {
+        background-position: bottom;
+    }
+    75% {
+        background-position: left;
+    }
+    100% {
+        background-position: top;
     }
 }
 
@@ -24,18 +62,6 @@
 
     @media (max-width: 768px) {
         left: 0;
-    }
-}
-
-.intro__img-target {
-    max-width: 100%;
-    position: absolute;
-    bottom: 45px;
-    right: -154px;
-    z-index: -10;
-
-    @media (max-width: 768px) {
-        display: none;
     }
 }
 
