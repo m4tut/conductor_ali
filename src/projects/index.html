@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Проводник</title>
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+        <!-- fontello -->
+        <link rel="stylesheet" href="../../styles/fontello/animation.css" type="text/css" />
+        <link rel="stylesheet" href="../../styles/fontello/fontello.css" type="text/css" />
+        <link rel="stylesheet" href="../../styles/fontello/fontello-codes.css" type="text/css" />
+        <link rel="stylesheet" href="../../styles/fontello/fontello-embedded.css" type="text/css" />
+        <link rel="stylesheet" href="../../styles/fontello/fontello-ie7.css" type="text/css" />
+        <link rel="stylesheet" href="../../styles/fontello/fontello-ie7-codes.css" type="text/css" />
+        <!-- /fontello -->
+
+        <!-- styles -->
+        <link rel="stylesheet" href="../../styles/normalize.css" />
+        <link rel="stylesheet" href="../../styles/animate.min.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <!-- /styles -->
+
+        <!-- script -->
+        <script src="../../js/script.js" defer></script>
+        <!-- script -->
+    </head>
+    <body class="animate__animated animate__fadeIn animate__delay-1s">
+        <div class="gradient">
+            <div class="container">
+                <header class="header">
+                    <div class="header__logo">
+                        <a href="/"><h1>Проводник</h1></a>
+                    </div>
+                    <div class="header__content">
+                        <nav class="header__nav">
+                            <ul class="header__nav-menu">
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">услуги</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">цены</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">как это работает?</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">блог</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">о компании</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">производителям</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">проекты</a>
+                                </li>
+                                <li class="header__nav-menu-item header-footer-menu-item">
+                                    <a href="">контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <aside class="header__contact">
+                            <address class="header-footer-adress icon-location">
+                                <a href="https://www.google.com/maps">г. Москва, ул. Улица, 20 с. 1</a>
+                            </address>
+                            <div class="header__contact-info">
+                                <div class="header-footer-phone icon-phone">
+                                    <a href="tel:+71231231288">8(123) 123-12-88</a>
+                                </div>
+                                <div class="header__contact-mail">
+                                    <a href="mailto:info@provodnik.ru">info@provodnik.ru</a>
+                                </div>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="btn btn--header-footer"
+                                data-modal="modal__back-call"
+                            >
+                                Обратный звонок
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                                    <path
+                                        d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0"
+                                    />
+                                </svg>
+                            </button>
+                        </aside>
+                    </div>
+                    <button id="burger" class="header__burger" type="button">
+                        <span class="icon"></span>
+                        <span class="header__burger-text">MENU</span>
+                    </button>
+                </header>
+
+                <div class="intro">
+                    <img src="../../images/intro-img/girl.png" alt="girl" class="intro__img-girl" />
+                    <figure class="intro__logo">
+                        <figcaption class="intro__logo-text">зайди на</figcaption>
+                        <img src="../../images/intro-img/aliexpress_logo.svg" alt="intro-logo" />
+                    </figure>
+                    <p class="intro__left-text">
+                        Лучшее решение для небольших <br />
+                        интернет-магазинов и производителей
+                    </p>
+                    <button type="button" class="btn btn--intro">
+                        Хочу на AliExpress
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                            <path
+                                d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section class="achievements-section">
+                <div class="container">
+                    <h2 class="section-title section-title--black">
+                        Чего добились с Проводником другие магазины?
+                    </h2>
+
+                    <div class="achievements-section__tiles-block">
+                        <div class="achievements-section__tiles" data-modal="tilesID_1">
+                            <img src="../../images/achievements-section-img/h_m.svg" alt="h_m" />
+                        </div>
+
+                        <div class="achievements-section__tiles" data-modal="tilesID_2">
+                            <img src="../../images/achievements-section-img/h_m.svg" alt="h_m" />
+                        </div>
+
+                        <div class="achievements-section__tiles" data-modal="tilesID_3">
+                            <img src="../../images/achievements-section-img/h_m.svg" alt="h_m" />
+                        </div>
+
+                        <div class="achievements-section__tiles" data-modal="tilesID_4">
+                            <img src="../../images/achievements-section-img/h_m.svg" alt="h_m" />
+                        </div>
+
+                        <div class="achievements-section__tiles" data-modal="tilesID_5">
+                            <img src="../../images/achievements-section-img/h_m.svg" alt="h_m" />
+                        </div>
+
+                        <div class="achievements-section__tiles" data-modal="tilesID_6">
+                            <img src="../../images/achievements-section-img/h_m.svg" alt="h_m" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__logo">
+                        <a href="/"><span>Проводник</span></a>
+                    </div>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-menu">
+                            <li class="header-footer-menu-item"><a href="">услуги</a></li>
+                            <li class="header-footer-menu-item"><a href="">цены</a></li>
+                            <li class="header-footer-menu-item"><a href="">как это работает?</a></li>
+                            <li class="header-footer-menu-item"><a href="">блог</a></li>
+                            <li class="header-footer-menu-item"><a href="">о компании</a></li>
+                            <li class="header-footer-menu-item"><a href="">производителям</a></li>
+                            <li class="header-footer-menu-item"><a href="">проекты</a></li>
+                            <li class="header-footer-menu-item"><a href="">контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__bottom-info icon-copy">
+                        <p>
+                            2018. <br />
+                            Все права защищены.
+                        </p>
+                    </div>
+                    <aside class="footer__bottom-contact">
+                        <address class="footer__bottom-adress header-footer-adress icon-location">
+                            <a href="https://www.google.com/maps">г. Москва, ул. Улица, 20 с. 1</a>
+                        </address>
+                        <div class="footer__contact-info">
+                            <div class="footer__contact-phone header-footer-phone icon-phone">
+                                <a href="tel:+71231231288">8(123) 123-12-88</a>
+                            </div>
+                            <div class="footer__contact-mail">
+                                <a href="mailto:info@provodnik.ru">info@provodnik.ru</a>
+                            </div>
+                        </div>
+
+                        <a
+                            href="https://www.facebook.com/"
+                            class="footer__bottom-icon icon-facebook"
+                            target="_blank"
+                        ></a>
+
+                        <button type="button" class="btn btn--header-footer" data-modal="modal__back-call">
+                            Обратный звонок
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                                <path
+                                    d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0"
+                                />
+                            </svg>
+                        </button>
+                    </aside>
+                </div>
+            </div>
+        </footer>
+
+        <!-- modal window form -->
+        <div id="modal__back-call" class="form-section modal">
+            <div class="container">
+                <form
+                    action="/"
+                    method="POST"
+                    class="form-section__form modal__modal-dialog animate__animated"
+                >
+                    <button type="button" class="modal__close icon-modal-close" data-close></button>
+                    <div class="form-section__form-body">
+                        <h2 class="section-title section-title--black">Пожалуйста, оставьте свои контакты</h2>
+                        <div class="form-section__form-left">
+                            <div class="form-section__form-group">
+                                <input
+                                    id="modal-name"
+                                    name="name"
+                                    type="text"
+                                    class="form-section__form-input"
+                                    placeholder="Как к вам обращаться"
+                                    pattern="^[А-Яа-яЁё]+$"
+                                    required
+                                />
+                                <label for="modal-name" class="form-section__form-label"> Имя </label>
+                            </div>
+
+                            <div class="form-section__form-group">
+                                <input
+                                    id="modal-phone"
+                                    name="phone"
+                                    type="tel"
+                                    class="form-section__form-input"
+                                    placeholder="+7 (123) 12-12-123"
+                                    pattern="\+?[0-9\s\-\(\)]+"
+                                    required
+                                />
+                                <label for="modal-phone" class="form-section__form-label"> Телефон </label>
+                            </div>
+
+                            <div class="form-section__form-group">
+                                <input
+                                    id="modal-email"
+                                    name="email"
+                                    type="email"
+                                    class="form-section__form-input"
+                                    placeholder="Нужен для связи"
+                                    required
+                                />
+                                <label for="modal-email" class="form-section__form-label"> Е-mail </label>
+                            </div>
+                        </div>
+                        <div class="form-section__form-right">
+                            <div class="form-section__form-group">
+                                <select
+                                    id="modal-occupation"
+                                    class="form-section__form-input form-section__form-select"
+                                    name="occupation"
+                                    required
+                                >
+                                    <option selected value="">Выберите род деятельности</option>
+                                    <option value="Одежда и обувь">Одежда и обувь</option>
+                                    <option value="Электроника">Электроника</option>
+                                    <option value="Продукты питания">Продукты питания</option>
+                                </select>
+                                <label for="modal-occupation" class="form-section__form-label">
+                                    Кто вы
+                                </label>
+                            </div>
+
+                            <div class="form-section__form-group">
+                                <input
+                                    id="modal-domain"
+                                    name="domain"
+                                    type="text"
+                                    class="form-section__form-input"
+                                />
+                                <label for="modal-domain" class="form-section__form-label">
+                                    Домен (если есть)
+                                </label>
+                            </div>
+
+                            <div class="form-section__form-group">
+                                <input
+                                    id="modal-caption"
+                                    name="caption"
+                                    type="text"
+                                    class="form-section__form-input"
+                                    placeholder="Input caption"
+                                    required
+                                />
+                                <label for="modal-caption" class="form-section__form-label">
+                                    Focused state
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="form-section__form-foter">
+                        <div class="form-section__form-foter-text">
+                            <p>
+                                Оправляя форму, вы соглашаетесь на сбор, обработку и хранение ваших данных
+                                сотрудниками компании. <br />
+                            </p>
+                            <a href="">Политика конфиденциальности</a>
+                        </div>
+                        <button type="submit" class="btn form-section__footer-btn">
+                            Отправить
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.75 60">
+                                <path
+                                    d="M.32 0H0v60h.37a6 6 0 005.32-3.21l12.37-23.55a6 6 0 000-5.5L5.67 3.28A6 6 0 00.32 0"
+                                />
+                            </svg>
+                        </button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+
+        <!-- modal window tiles-->
+        <div id="tilesID_1" class="form-section modal">
+            <div class="container">
+                <div class="achievements-section__content animate__animated">
+                    <button type="button" class="modal__close icon-modal-close" data-close></button>
+                    <div class="achievements-section__slider">
+                        <article
+                            class="
+                                achievements-section__slider-item
+                                achievements-section__slider-item--active
+                            "
+                        >
+                            <div class="achievements-section__slider-img">
+                                <img src="../../images/achievements-section-img/h_m.svg" alt="H&M" />
+                            </div>
+                            <div class="achievements-section__slider-info">
+                                <h3 class="achievements-section__info-title">
+                                    Продвижение и раскрутка магазина одежды №1
+                                </h3>
+                                <p class="achievements-section__slider-text">
+                                    Проводник ищет магазины и производителей и заводит их на маркетплейс.
+                                    Уже освоил алгоритм продвижения магазина и готов его применить для
+                                    вашей раскрутки на маркетплейсе.
+                                </p>
+
+                                <ul class="achievements-section__slider-list">
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">765 885</b> Законченных покупок
+                                    </li>
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">789 654</b> Просмотров магазина
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tilesID_2" class="form-section modal">
+            <div class="container">
+                <div class="achievements-section__content animate__animated">
+                    <button type="button" class="modal__close icon-modal-close" data-close></button>
+                    <div class="achievements-section__slider">
+                        <article
+                            class="
+                                achievements-section__slider-item
+                                achievements-section__slider-item--active
+                            "
+                        >
+                            <div class="achievements-section__slider-img">
+                                <img src="../../images/achievements-section-img/h_m.svg" alt="H&M" />
+                            </div>
+                            <div class="achievements-section__slider-info">
+                                <h3 class="achievements-section__info-title">
+                                    Продвижение и раскрутка магазина одежды №2
+                                </h3>
+                                <p class="achievements-section__slider-text">
+                                    Проводник ищет магазины и производителей и заводит их на маркетплейс.
+                                    Уже освоил алгоритм продвижения магазина и готов его применить для
+                                    вашей раскрутки на маркетплейсе.
+                                </p>
+
+                                <ul class="achievements-section__slider-list">
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">765 885</b> Законченных покупок
+                                    </li>
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">789 654</b> Просмотров магазина
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tilesID_3" class="form-section modal">
+            <div class="container">
+                <div class="achievements-section__content animate__animated">
+                    <button type="button" class="modal__close icon-modal-close" data-close></button>
+                    <div class="achievements-section__slider">
+                        <article
+                            class="
+                                achievements-section__slider-item
+                                achievements-section__slider-item--active
+                            "
+                        >
+                            <div class="achievements-section__slider-img">
+                                <img src="../../images/achievements-section-img/h_m.svg" alt="H&M" />
+                            </div>
+                            <div class="achievements-section__slider-info">
+                                <h3 class="achievements-section__info-title">
+                                    Продвижение и раскрутка магазина одежды №3
+                                </h3>
+                                <p class="achievements-section__slider-text">
+                                    Проводник ищет магазины и производителей и заводит их на маркетплейс.
+                                    Уже освоил алгоритм продвижения магазина и готов его применить для
+                                    вашей раскрутки на маркетплейсе.
+                                </p>
+
+                                <ul class="achievements-section__slider-list">
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">765 885</b> Законченных покупок
+                                    </li>
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">789 654</b> Просмотров магазина
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tilesID_4" class="form-section modal">
+            <div class="container">
+                <div class="achievements-section__content animate__animated">
+                    <button type="button" class="modal__close icon-modal-close" data-close></button>
+                    <div class="achievements-section__slider">
+                        <article
+                            class="
+                                achievements-section__slider-item
+                                achievements-section__slider-item--active
+                            "
+                        >
+                            <div class="achievements-section__slider-img">
+                                <img src="../../images/achievements-section-img/h_m.svg" alt="H&M" />
+                            </div>
+                            <div class="achievements-section__slider-info">
+                                <h3 class="achievements-section__info-title">
+                                    Продвижение и раскрутка магазина одежды №4
+                                </h3>
+                                <p class="achievements-section__slider-text">
+                                    Проводник ищет магазины и производителей и заводит их на маркетплейс.
+                                    Уже освоил алгоритм продвижения магазина и готов его применить для
+                                    вашей раскрутки на маркетплейсе.
+                                </p>
+
+                                <ul class="achievements-section__slider-list">
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">765 885</b> Законченных покупок
+                                    </li>
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">789 654</b> Просмотров магазина
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tilesID_5" class="form-section modal">
+            <div class="container">
+                <div class="achievements-section__content animate__animated">
+                    <button type="button" class="modal__close icon-modal-close" data-close></button>
+                    <div class="achievements-section__slider">
+                        <article
+                            class="
+                                achievements-section__slider-item
+                                achievements-section__slider-item--active
+                            "
+                        >
+                            <div class="achievements-section__slider-img">
+                                <img src="../../images/achievements-section-img/h_m.svg" alt="H&M" />
+                            </div>
+                            <div class="achievements-section__slider-info">
+                                <h3 class="achievements-section__info-title">
+                                    Продвижение и раскрутка магазина одежды №5
+                                </h3>
+                                <p class="achievements-section__slider-text">
+                                    Проводник ищет магазины и производителей и заводит их на маркетплейс.
+                                    Уже освоил алгоритм продвижения магазина и готов его применить для
+                                    вашей раскрутки на маркетплейсе.
+                                </p>
+
+                                <ul class="achievements-section__slider-list">
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">765 885</b> Законченных покупок
+                                    </li>
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">789 654</b> Просмотров магазина
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tilesID_6" class="form-section modal">
+            <div class="container">
+                <div class="achievements-section__content animate__animated">
+                    <button type="button" class="modal__close icon-modal-close" data-close></button>
+                    <div class="achievements-section__slider">
+                        <article
+                            class="
+                                achievements-section__slider-item
+                                achievements-section__slider-item--active
+                            "
+                        >
+                            <div class="achievements-section__slider-img">
+                                <img src="../../images/achievements-section-img/h_m.svg" alt="H&M" />
+                            </div>
+                            <div class="achievements-section__slider-info">
+                                <h3 class="achievements-section__info-title">
+                                    Продвижение и раскрутка магазина одежды №6
+                                </h3>
+                                <p class="achievements-section__slider-text">
+                                    Проводник ищет магазины и производителей и заводит их на маркетплейс.
+                                    Уже освоил алгоритм продвижения магазина и готов его применить для
+                                    вашей раскрутки на маркетплейсе.
+                                </p>
+
+                                <ul class="achievements-section__slider-list">
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">765 885</b> Законченных покупок
+                                    </li>
+                                    <li class="achievements-section__list-item list-marker">
+                                        <b class="animate__animated animate__pulse animate__infinite animate__slow">789 654</b> Просмотров магазина
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
