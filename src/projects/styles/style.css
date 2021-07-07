@@ -1851,4 +1851,8 @@ header {
 .intro::after {
   background: url(../../../images/intro-img/aliexpress.png) no-repeat center;
 }
+
+.achievements-section {
+  margin-top: 0;
+}
 /*# sourceMappingURL=style.css.map */
