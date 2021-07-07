@@ -1843,4 +1843,12 @@ header {
 .achievements-section__tiles:hover::after {
   opacity: 1;
 }
+
+.header-footer-menu-item::after {
+  background-image: url("../../../images/wave.svg");
+}
+
+.intro::after {
+  background: url(../../../images/intro-img/aliexpress.png) no-repeat center;
+}
 /*# sourceMappingURL=style.css.map */
