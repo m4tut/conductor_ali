@@ -81,7 +81,7 @@
     transition: color 0.3s ease-in;
 
     &:hover {
-        color: $color-hover;
+        color: $electric-violet;
     }
 }
 
@@ -91,7 +91,7 @@
     transition: color 0.3s ease-in;
 
     &:hover {
-        color: $lightning-yellow;
+        color: $electric-violet;
     }
 
     @media (max-width: 480px) {

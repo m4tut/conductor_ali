@@ -176,6 +176,14 @@ button {
   }
 }
 
+.btn--header-footer:hover {
+  background-color: #651fff;
+}
+
+.btn--header-footer:hover svg path {
+  fill: #651fff;
+}
+
 .leaky-sides {
   display: inline-block;
   font-size: 1.125rem;
@@ -255,8 +263,9 @@ select {
   text-transform: uppercase;
   margin-right: 30px;
   margin-bottom: 5px;
-  -webkit-transition: color 0.5s ease-in;
-  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  position: relative;
 }
 
 .header-footer-menu-item:last-child {
@@ -266,19 +275,23 @@ select {
 .header-footer-menu-item::after {
   content: '';
   display: block;
-  width: 0;
-  height: 4px;
-  background-image: url("../images/wave.svg");
-  -webkit-transition: width 0.5s ease-in;
-  transition: width 0.5s ease-in;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  background-color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header-footer-menu-item:hover {
-  color: #453886;
+  color: #FF5900;
 }
 
 .header-footer-menu-item:hover::after {
-  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #FF5900;
 }
 
 .header-footer-adress {
@@ -301,7 +314,7 @@ select {
 }
 
 .header-footer-adress:hover {
-  color: #453886;
+  color: #651fff;
 }
 
 .header-footer-phone {
@@ -333,7 +346,7 @@ select {
 }
 
 .header-footer-phone:hover {
-  color: #453886;
+  color: #651fff;
 }
 
 header {
@@ -477,7 +490,7 @@ header {
 }
 
 .header__contact-mail:hover {
-  color: #453886;
+  color: #651fff;
 }
 
 .header__burger {
@@ -1525,7 +1538,7 @@ header {
 }
 
 .form-section__form-input:focus {
-  border-bottom: 2px solid #651fff;
+  border-bottom: 1px solid #651fff;
 }
 
 .form-section__form-input:focus ~ .form-section__form-label,
@@ -1708,7 +1721,7 @@ header {
 }
 
 .footer__contact-mail:hover {
-  color: #453886;
+  color: #651fff;
 }
 
 .footer__bottom-icon {
@@ -1719,7 +1732,7 @@ header {
 }
 
 .footer__bottom-icon:hover {
-  color: #fdbf0f;
+  color: #651fff;
 }
 
 @media (max-width: 480px) {
@@ -1842,10 +1855,6 @@ header {
 
 .achievements-section__tiles:hover::after {
   opacity: 1;
-}
-
-.header-footer-menu-item::after {
-  background-image: url("../../../images/wave.svg");
 }
 
 .intro::after {
