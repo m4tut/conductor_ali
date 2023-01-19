@@ -159,6 +159,10 @@
         opacity: 0.9;
     }
 
+    &:hover {
+      border-bottom: 1px solid rgba($electric-violet, 0.5);
+    }
+
     &:focus {
         border-bottom: 1px solid $electric-violet;
     }
